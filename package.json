@@ -1,0 +1,19 @@
+{
+  "name": "demopackage",
+  "version": "1.0.0",
+  "description": "A demo package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bepremeg/npmdemo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bepremeg/npmdemo/issues"
+  },
+  "homepage": "https://github.com/bepremeg/npmdemo#readme"
+}
