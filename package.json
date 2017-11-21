@@ -1,5 +1,5 @@
 {
-  "name": "demopackage",
+  "name": "@bepremeg/demopackage",
   "version": "1.0.0",
   "description": "A demo package",
   "main": "index.js",
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/bepremeg/npmdemo/issues"
   },
-  "homepage": "https://github.com/bepremeg/npmdemo#readme"
+  "homepage": "https://github.com/bepremeg/npmdemo#readme",
+  "dependencies": {}
 }
