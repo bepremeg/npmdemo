@@ -4,3 +4,10 @@ node_js:
 cache:
   directories:
     - "node_modules"
+before_install:
+#skip_cleanup: true
+deploy:
+  provider: npm
+  email: geert.premereur+github@ictects.com
+  on:
+    tags: true

@@ -16,5 +16,8 @@
     "url": "https://github.com/bepremeg/npmdemo/issues"
   },
   "homepage": "https://github.com/bepremeg/npmdemo#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }
