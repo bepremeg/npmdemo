@@ -9,5 +9,6 @@ before_install:
 deploy:
   provider: npm
   email: geert.premereur+github@ictects.com
+  api_key: $NPM_TOKEN
   on:
     tags: true

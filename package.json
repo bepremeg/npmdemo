@@ -1,6 +1,6 @@
 {
   "name": "@bepremeg/demopackage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A demo package",
   "main": "index.js",
   "scripts": {
