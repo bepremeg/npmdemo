@@ -1,14 +1,19 @@
 language: node_js
 node_js:
-  - "lts/boron"
+- lts/boron
 cache:
   directories:
-    - "node_modules"
-before_install:
-#skip_cleanup: true
+  - node_modules
+before_install: 
 deploy:
   provider: npm
   email: geert.premereur+github@ictects.com
-  api_key: $NPM_TOKEN
+  api_key: "$NPM_TOKEN"
   on:
     tags: true
+notifications:
+  hipchat:
+    rooms:
+      secure: pVxr2cFFRAwH+mn6VqM41kUkKqt+rfzbh17RUAsUAjS3zRcd9yk5U+1YCxZ9/GfLiFkfnoL3pCviRtkq5hhON9e3UAFjrDM+XqfTclHxx6ePT0EUFHF/Nd22XPyEqmuKEZd/ORM06PZOZWdg0jrKZ+gEV6UMLZzSA7FjBaMwc7yjPJ2j0fHzHmTI8nCQlL4uncn3nbHa8W3Kv45O/eAOr/J42/7UI69o1iF3tiOLVLV1lDjR6N7sWjtQxj/nT33iNgGlTZlFJdXmyBJD50L9RiKFvxgzGtqYF2yBx+wd826Wew5B+6KTlPZEL3uZTJ0gNNrNvGggnLx5iS4rN9sfVpSuahp3rpjTAqkW1NaIxGoS4OAxNdO0MjckNFRCnN1ygXh8MbD38T88naC9Ds1PFmdElItu3o4e0upD5P4xfmwX1a427tCPHtJGzgG3XD787HjpFCpPCFWQaSKscKccGQ9EnpqSKIOABq0MlUrDQdAWFCVGHypG9wdDNjq0YXFRuPjeqfcyf4eib0bz7FoQAgddgUPHLluQsLhWU7DNZtUifl4Voxuo07tr0FwJURzThth6L4Hhk9RlbywWAi0JrxmQPDLsfMulaXz2mb+xI7OffswsnLzeQifRyLYQfDts+eDw0YGyvXQcYBpRlGJe7C1dFvynv+u+SrlYCtwQZOI=
+    template:
+    - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
